@@ -1,0 +1,57 @@
+{
+  "_comment": "Master configuration — mirrors the CONFIG dict in Section 2 of the notebook. Edit here and copy into the notebook if customising.",
+  "_version": "1.0.0",
+  "_last_updated": "2024-12-01",
+
+  "start_year": 2020,
+  "end_year": 2023,
+  "resolution": 30,
+  "crs": "EPSG:32643",
+
+  "districts": ["Satara", "Sangli", "Kolhapur", "Solapur"],
+
+  "sample_n": 8000,
+  "random_state": 42,
+  "n_clusters": 5,
+
+  "class_breaks": [0, 5, 10, 20, 40, 80, 9999],
+  "class_labels": ["Very Low", "Low", "Moderate", "High", "Very High", "Severe"],
+  "class_colors": ["#1a9850", "#91cf60", "#d9ef8b", "#fee08b", "#fc8d59", "#d73027"],
+
+  "gee": {
+    "project_id": "YOUR_GEE_PROJECT_ID",
+    "export_folder": "WesternMaharashtra_Erosion",
+    "tile_scale": 8,
+    "max_pixels": 1e13
+  },
+
+  "ml": {
+    "test_size": 0.2,
+    "cv_folds": 5,
+    "cap_percentile": 0.99,
+    "rf_n_estimators": 300,
+    "rf_max_depth": 15,
+    "gb_n_estimators": 300,
+    "gb_learning_rate": 0.05,
+    "gb_max_depth": 5,
+    "mlp_hidden_layers": [128, 64, 32]
+  },
+
+  "vulnerability_weights": {
+    "slope": 0.35,
+    "vegetation": 0.30,
+    "rainfall": 0.20,
+    "tri": 0.15
+  },
+
+  "scs_cn": {
+    "tree_cn": 70,
+    "grass_cn": 80,
+    "crop_cn": 85,
+    "bare_cn": 90,
+    "default_cn": 75
+  },
+
+  "output_path": "/content/erosion_outputs",
+  "zip_path": "/content/erosion_analysis_results.zip"
+}

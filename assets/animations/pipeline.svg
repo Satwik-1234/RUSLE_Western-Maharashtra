@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#4ade80" opacity="0.7"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="200" fill="url(#bg2)" rx="10"/>
+
+  <!-- Title -->
+  <text x="450" y="22" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#4ade80" letter-spacing="5" opacity="0.7">ANALYSIS PIPELINE</text>
+
+  <!-- Step boxes -->
+  <!-- Step 1: Data Ingestion -->
+  <rect x="20" y="40" width="110" height="70" rx="6" fill="#0f2d1a" stroke="#1a9850" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="75" y="66" text-anchor="middle" font-family="monospace" font-size="18" fill="#1a9850">🛰️</text>
+  <text x="75" y="82" text-anchor="middle" font-family="monospace" font-size="9" fill="#4ade80" font-weight="bold">DATA</text>
+  <text x="75" y="94" text-anchor="middle" font-family="monospace" font-size="8" fill="#64748b">INGESTION</text>
+  <text x="75" y="122" text-anchor="middle" font-family="monospace" font-size="7" fill="#334155">GPM·SRTM·S2</text>
+
+  <!-- Arrow 1 -->
+  <line x1="133" y1="75" x2="158" y2="75" stroke="#4ade80" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.7">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="1.8s" repeatCount="indefinite"/>
+  </line>
+  <!-- Animated data packet -->
+  <circle cx="130" cy="75" r="3" fill="#4ade80" opacity="0">
+    <animate attributeName="cx" values="133;158" dur="1.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Step 2: RUSLE Factors -->
+  <rect x="160" y="40" width="110" height="70" rx="6" fill="#1a2035" stroke="#fee08b" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2.3s" repeatCount="indefinite" begin="0.3s"/>
+  </rect>
+  <text x="215" y="66" text-anchor="middle" font-family="monospace" font-size="18" fill="#fee08b">⚡</text>
+  <text x="215" y="82" text-anchor="middle" font-family="monospace" font-size="9" fill="#fef3c7" font-weight="bold">RUSLE</text>
+  <text x="215" y="94" text-anchor="middle" font-family="monospace" font-size="8" fill="#64748b">FACTORS</text>
+  <text x="215" y="122" text-anchor="middle" font-family="monospace" font-size="7" fill="#334155">R·K·LS·C·P</text>
+
+  <!-- Arrow 2 -->
+  <line x1="273" y1="75" x2="298" y2="75" stroke="#4ade80" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.7">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="1.8s" repeatCount="indefinite" begin="0.3s"/>
+  </line>
+  <circle cx="270" cy="75" r="3" fill="#fee08b" opacity="0">
+    <animate attributeName="cx" values="273;298" dur="1.8s" repeatCount="indefinite" begin="0.3s"/>
+    <animate attributeName="opacity" values="0;1;0" dur="1.8s" repeatCount="indefinite" begin="0.3s"/>
+  </circle>
+
+  <!-- Step 3: Soil Loss -->
+  <rect x="300" y="40" width="110" height="70" rx="6" fill="#2d1a0f" stroke="#fc8d59" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" begin="0.6s"/>
+  </rect>
+  <text x="355" y="66" text-anchor="middle" font-family="monospace" font-size="18" fill="#fc8d59">🗺️</text>
+  <text x="355" y="82" text-anchor="middle" font-family="monospace" font-size="9" fill="#fed7aa" font-weight="bold">SOIL LOSS</text>
+  <text x="355" y="94" text-anchor="middle" font-family="monospace" font-size="8" fill="#64748b">MAPPING</text>
+  <text x="355" y="122" text-anchor="middle" font-family="monospace" font-size="7" fill="#334155">30m GeoTIFF</text>
+
+  <!-- Arrow 3 -->
+  <line x1="413" y1="75" x2="438" y2="75" stroke="#4ade80" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.7">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="1.8s" repeatCount="indefinite" begin="0.6s"/>
+  </line>
+  <circle cx="410" cy="75" r="3" fill="#fc8d59" opacity="0">
+    <animate attributeName="cx" values="413;438" dur="1.8s" repeatCount="indefinite" begin="0.6s"/>
+    <animate attributeName="opacity" values="0;1;0" dur="1.8s" repeatCount="indefinite" begin="0.6s"/>
+  </circle>
+
+  <!-- Step 4: ML Models -->
+  <rect x="440" y="40" width="110" height="70" rx="6" fill="#1a1a2e" stroke="#8b5cf6" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2.4s" repeatCount="indefinite" begin="0.9s"/>
+  </rect>
+  <text x="495" y="66" text-anchor="middle" font-family="monospace" font-size="18" fill="#8b5cf6">🤖</text>
+  <text x="495" y="82" text-anchor="middle" font-family="monospace" font-size="9" fill="#c4b5fd" font-weight="bold">ML MODELS</text>
+  <text x="495" y="94" text-anchor="middle" font-family="monospace" font-size="8" fill="#64748b">8 ALGORITHMS</text>
+  <text x="495" y="122" text-anchor="middle" font-family="monospace" font-size="7" fill="#334155">RF·GB·MLP·Stack</text>
+
+  <!-- Arrow 4 -->
+  <line x1="553" y1="75" x2="578" y2="75" stroke="#4ade80" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.7">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="1.8s" repeatCount="indefinite" begin="1.2s"/>
+  </line>
+  <circle cx="550" cy="75" r="3" fill="#8b5cf6" opacity="0">
+    <animate attributeName="cx" values="553;578" dur="1.8s" repeatCount="indefinite" begin="1.2s"/>
+    <animate attributeName="opacity" values="0;1;0" dur="1.8s" repeatCount="indefinite" begin="1.2s"/>
+  </circle>
+
+  <!-- Step 5: Visualization -->
+  <rect x="580" y="40" width="110" height="70" rx="6" fill="#1a2535" stroke="#06b6d4" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2.1s" repeatCount="indefinite" begin="1.5s"/>
+  </rect>
+  <text x="635" y="66" text-anchor="middle" font-family="monospace" font-size="18" fill="#06b6d4">📊</text>
+  <text x="635" y="82" text-anchor="middle" font-family="monospace" font-size="9" fill="#a5f3fc" font-weight="bold">ANALYSIS</text>
+  <text x="635" y="94" text-anchor="middle" font-family="monospace" font-size="8" fill="#64748b">25+ CHARTS</text>
+  <text x="635" y="122" text-anchor="middle" font-family="monospace" font-size="7" fill="#334155">Plotly·geemap</text>
+
+  <!-- Arrow 5 -->
+  <line x1="693" y1="75" x2="718" y2="75" stroke="#4ade80" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.7">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="1.8s" repeatCount="indefinite" begin="1.8s"/>
+  </line>
+  <circle cx="690" cy="75" r="3" fill="#06b6d4" opacity="0">
+    <animate attributeName="cx" values="693;718" dur="1.8s" repeatCount="indefinite" begin="1.8s"/>
+    <animate attributeName="opacity" values="0;1;0" dur="1.8s" repeatCount="indefinite" begin="1.8s"/>
+  </circle>
+
+  <!-- Step 6: Export -->
+  <rect x="720" y="40" width="110" height="70" rx="6" fill="#0f2420" stroke="#22c55e" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" begin="2.1s"/>
+  </rect>
+  <text x="775" y="66" text-anchor="middle" font-family="monospace" font-size="18" fill="#22c55e">📤</text>
+  <text x="775" y="82" text-anchor="middle" font-family="monospace" font-size="9" fill="#bbf7d0" font-weight="bold">EXPORT</text>
+  <text x="775" y="94" text-anchor="middle" font-family="monospace" font-size="8" fill="#64748b">ALL FORMATS</text>
+  <text x="775" y="122" text-anchor="middle" font-family="monospace" font-size="7" fill="#334155">GeoTIFF·CSV·HTML</text>
+
+  <!-- Bottom labels -->
+  <text x="75" y="148" text-anchor="middle" font-family="monospace" font-size="8" fill="#1a9850" opacity="0.8">①</text>
+  <text x="215" y="148" text-anchor="middle" font-family="monospace" font-size="8" fill="#fee08b" opacity="0.8">②</text>
+  <text x="355" y="148" text-anchor="middle" font-family="monospace" font-size="8" fill="#fc8d59" opacity="0.8">③</text>
+  <text x="495" y="148" text-anchor="middle" font-family="monospace" font-size="8" fill="#8b5cf6" opacity="0.8">④</text>
+  <text x="635" y="148" text-anchor="middle" font-family="monospace" font-size="8" fill="#06b6d4" opacity="0.8">⑤</text>
+  <text x="775" y="148" text-anchor="middle" font-family="monospace" font-size="8" fill="#22c55e" opacity="0.8">⑥</text>
+
+  <!-- Overall progress bar -->
+  <rect x="20" y="162" width="860" height="4" rx="2" fill="#1e293b"/>
+  <rect x="20" y="162" width="860" height="4" rx="2" fill="url(#textGrad)" opacity="0.8">
+    <defs>
+      <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#1a9850"/>
+        <stop offset="50%" style="stop-color:#fee08b"/>
+        <stop offset="100%" style="stop-color:#d73027"/>
+      </linearGradient>
+    </defs>
+    <animate attributeName="width" values="0;860;860" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <text x="450" y="185" text-anchor="middle" font-family="monospace" font-size="8" fill="#475569" letter-spacing="3">
+    AUTOMATED · REPRODUCIBLE · OPEN SOURCE
+  </text>
+</svg>

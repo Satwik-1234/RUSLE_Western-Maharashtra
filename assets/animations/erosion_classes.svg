@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="120" viewBox="0 0 900 120">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="120" fill="url(#bg3)" rx="8"/>
+
+  <!-- Label -->
+  <text x="450" y="18" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#64748b" letter-spacing="4">EROSION SEVERITY CLASSIFICATION  ·  RUSLE  ·  t/ha/yr</text>
+
+  <!-- Class bars -->
+  <!-- Very Low: #1a9850 -->
+  <rect x="20" y="30" width="130" height="50" rx="6" fill="#1a9850" opacity="0.15"/>
+  <rect x="20" y="30" width="130" height="50" rx="6" fill="none" stroke="#1a9850" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <text x="85" y="52" text-anchor="middle" font-family="monospace" font-size="11" fill="#1a9850" font-weight="bold">VERY LOW</text>
+  <text x="85" y="67" text-anchor="middle" font-family="monospace" font-size="9" fill="#64748b">0 – 5 t/ha/yr</text>
+  <rect x="25" y="85" width="120" height="3" rx="1.5" fill="#1a9850" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Low: #91cf60 -->
+  <rect x="162" y="30" width="130" height="50" rx="6" fill="#91cf60" opacity="0.15"/>
+  <rect x="162" y="30" width="130" height="50" rx="6" fill="none" stroke="#91cf60" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" begin="0.5s"/>
+  </rect>
+  <text x="227" y="52" text-anchor="middle" font-family="monospace" font-size="11" fill="#91cf60" font-weight="bold">LOW</text>
+  <text x="227" y="67" text-anchor="middle" font-family="monospace" font-size="9" fill="#64748b">5 – 10 t/ha/yr</text>
+  <rect x="167" y="85" width="120" height="3" rx="1.5" fill="#91cf60" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite" begin="0.5s"/>
+  </rect>
+
+  <!-- Moderate: #d9ef8b -->
+  <rect x="304" y="30" width="130" height="50" rx="6" fill="#d9ef8b" opacity="0.1"/>
+  <rect x="304" y="30" width="130" height="50" rx="6" fill="none" stroke="#d9ef8b" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" begin="1s"/>
+  </rect>
+  <text x="369" y="52" text-anchor="middle" font-family="monospace" font-size="11" fill="#d9ef8b" font-weight="bold">MODERATE</text>
+  <text x="369" y="67" text-anchor="middle" font-family="monospace" font-size="9" fill="#64748b">10 – 20 t/ha/yr</text>
+  <rect x="309" y="85" width="120" height="3" rx="1.5" fill="#d9ef8b" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite" begin="1s"/>
+  </rect>
+
+  <!-- High: #fee08b -->
+  <rect x="446" y="30" width="130" height="50" rx="6" fill="#fee08b" opacity="0.1"/>
+  <rect x="446" y="30" width="130" height="50" rx="6" fill="none" stroke="#fee08b" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+  </rect>
+  <text x="511" y="52" text-anchor="middle" font-family="monospace" font-size="11" fill="#fee08b" font-weight="bold">HIGH</text>
+  <text x="511" y="67" text-anchor="middle" font-family="monospace" font-size="9" fill="#64748b">20 – 40 t/ha/yr</text>
+  <rect x="451" y="85" width="120" height="3" rx="1.5" fill="#fee08b" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+  </rect>
+
+  <!-- Very High: #fc8d59 -->
+  <rect x="588" y="30" width="130" height="50" rx="6" fill="#fc8d59" opacity="0.1"/>
+  <rect x="588" y="30" width="130" height="50" rx="6" fill="none" stroke="#fc8d59" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" begin="2s"/>
+  </rect>
+  <text x="653" y="52" text-anchor="middle" font-family="monospace" font-size="11" fill="#fc8d59" font-weight="bold">VERY HIGH</text>
+  <text x="653" y="67" text-anchor="middle" font-family="monospace" font-size="9" fill="#64748b">40 – 80 t/ha/yr</text>
+  <rect x="593" y="85" width="120" height="3" rx="1.5" fill="#fc8d59" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite" begin="2s"/>
+  </rect>
+
+  <!-- Severe: #d73027 -->
+  <rect x="730" y="30" width="150" height="50" rx="6" fill="#d73027" opacity="0.1"/>
+  <rect x="730" y="30" width="150" height="50" rx="6" fill="none" stroke="#d73027" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" begin="2.5s"/>
+  </rect>
+  <text x="805" y="52" text-anchor="middle" font-family="monospace" font-size="11" fill="#d73027" font-weight="bold">⚠ SEVERE</text>
+  <text x="805" y="67" text-anchor="middle" font-family="monospace" font-size="9" fill="#64748b">&gt; 80 t/ha/yr</text>
+  <rect x="735" y="85" width="140" height="3" rx="1.5" fill="#d73027" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite" begin="2.5s"/>
+  </rect>
+
+  <!-- Severity arrow -->
+  <line x1="20" y1="108" x2="880" y2="108" stroke="#334155" stroke-width="1"/>
+  <polygon points="876,105 884,108 876,111" fill="#334155"/>
+  <text x="20" y="118" font-family="monospace" font-size="8" fill="#475569">LOW RISK</text>
+  <text x="820" y="118" font-family="monospace" font-size="8" fill="#475569">HIGH RISK</text>
+</svg>
