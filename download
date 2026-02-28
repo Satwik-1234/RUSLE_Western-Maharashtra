@@ -1,0 +1,63 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Outputs (never commit large outputs) ─────────────────────────────────────
+outputs/
+erosion_outputs/
+*.zip
+*.csv
+*.geotiff
+*.tif
+*.tiff
+
+# ── Plotly exports ────────────────────────────────────────────────────────────
+*.png
+*.pdf
+*.svg
+!assets/animations/*.svg
+!assets/diagrams/*.svg
+
+# ── GEE credentials ───────────────────────────────────────────────────────────
+.config/earthengine/
+credentials
+*.json
+!config/analysis_config.json
+!.github/**/*.json
+
+# ── IDEs ─────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Test coverage ────────────────────────────────────────────────────────────
+.coverage
+coverage.xml
+htmlcov/
+.pytest_cache/
+
+# ── Conda ────────────────────────────────────────────────────────────────────
+.conda/
+
+# ── Docs build ───────────────────────────────────────────────────────────────
+docs/_build/
+site/
