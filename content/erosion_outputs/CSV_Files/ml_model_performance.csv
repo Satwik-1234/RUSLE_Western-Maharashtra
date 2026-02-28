@@ -1,0 +1,8 @@
+Model,R2,MAE,RMSE
+Random Forest,0.849,0.15,0.32
+Extra Trees,0.971,0.05,0.14
+Gradient Boosting,0.961,0.06,0.16
+Ridge,0.465,0.33,0.59
+Elastic Net,0.094,0.49,0.77
+Neural Net (MLP),0.815,0.16,0.35
+Stacking Ensemble,0.988,0.04,0.09
